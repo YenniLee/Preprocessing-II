@@ -170,12 +170,19 @@ img {
 }
 nav {
   display: flex;
-  width: 36vw;
   justify-content: space-between;
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
   padding-right: 20px;
+  padding-top: 40px;
+  width: 40vw;
+}
+@media (max-width: 500px) {
+  nav {
+    width: 70vw;
+    padding-top: 6px;
+  }
 }
 nav a {
   display: inline;
@@ -204,61 +211,89 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px dashed #C0C0C0;
-  width: 82vw;
+  width: 80vw;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
 }
 .top-content {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
-  width: 82vw;
+  width: 80vw;
   margin: 0 auto;
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-section {
-  margin: 30px 0;
+  margin: 0 auto;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.home .content-section .text-content {
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+}
+.home .text-content {
   width: 48%;
   padding-right: 1%;
 }
-.home .content-section .img-content {
+@media (max-width: 500px) {
+  .home .text-content {
+    width: 84%;
+    margin: 0 auto;
+  }
+}
+.home .img-content {
   width: 48%;
   padding-left: 1%;
 }
-.home .content-section .img-content img {
+@media (max-width: 500px) {
+  .home .img-content {
+    width: 84%;
+    margin: 0 auto;
+  }
+}
+.home .img-content img {
   border-radius: 10px;
 }
-.home .inverse-content {
+.inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .inverse-content .text-content {
+@media (max-width: 500px) {
+  .inverse-content div {
+    flex-direction: column-reverse;
+  }
+}
+.inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
-.home .inverse-content .img-content {
+.inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
-.home .content-destination {
+.content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
-.home .content-destination img {
+.content-destination img {
   border-radius: 10px;
 }
-.home .content-pick {
+.content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .destination {
+.content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
