@@ -1,14 +1,22 @@
 // Navigation Styles here
-header{
-    display: flex;
+nav {
+    display: flex; 
+    width: 36vw;
     justify-content: space-between;
-    align-items: center;
-    border-bottom: @dashed-line;
+    .minor-spacing();
+    padding-right: 20px;
+
+    a{
+        display: inline;
+        text-align: right;
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: black;
     
-}
-nav a{
-    display: inline;
-    text-align: right;
-    text-decoration: none;
-    font-size: 1.6rem;
+        &:hover{
+            color: @eastern-blue;
+            font-weight: bold;
+        }
+    }
+
 }
