@@ -1,1 +1,29 @@
 // Navigation Styles here
+nav {
+    display: flex; 
+    justify-content: space-between;
+    .minor-spacing();
+    padding-right: 20px;
+    padding-top: 40px;
+    width: 40vw;
+
+    @media @phone{
+        width: 70vw;
+        padding-top: 6px;
+    }
+    a{
+        display: inline;
+        text-align: right;
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: black;
+    
+        &:hover{
+            color: @eastern-blue;
+            font-weight: bold;
+        }
+    }
+
+}
+
+
