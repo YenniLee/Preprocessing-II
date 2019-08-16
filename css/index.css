@@ -197,7 +197,7 @@ nav a:hover {
 }
 .footer {
   width: 100%;
-  border-top: 2px dashed silver;
+  border-top: 2px dashed #C0C0C0;
   background: #FFEBCD;
 }
 .footer p {
@@ -225,8 +225,40 @@ header {
   padding-bottom: 10px;
   width: 80vw;
   margin: 0 auto;
-  padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+.top-content img {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .content-section {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .text-content p,
+  .text-content h2 {
+    width: 200%;
+    margin: 0 10vw;
+  }
+  .img-content img {
+    width: 200%;
+    margin: 0 10vw;
+  }
+  .content-pick {
+    Swidth: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .destination {
+    width: 80vw;
+  }
+  button {
+    height: 5vh;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-bottom: 4vh;
+  }
 }
 .home .content-section {
   margin: 0 auto;
@@ -235,30 +267,13 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media (max-width: 500px) {
-  .home .content-section {
-    flex-direction: column;
-  }
-}
 .home .text-content {
   width: 48%;
   padding-right: 1%;
 }
-@media (max-width: 500px) {
-  .home .text-content {
-    width: 84%;
-    margin: 0 auto;
-  }
-}
 .home .img-content {
   width: 48%;
   padding-left: 1%;
-}
-@media (max-width: 500px) {
-  .home .img-content {
-    width: 84%;
-    margin: 0 auto;
-  }
 }
 .home .img-content img {
   border-radius: 10px;
@@ -266,11 +281,8 @@ header {
 .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
-}
-@media (max-width: 500px) {
-  .inverse-content div {
-    flex-direction: column-reverse;
-  }
+  display: flex;
+  flex-direction: column-reverse;
 }
 .inverse-content .text-content {
   padding-left: 1%;
@@ -286,6 +298,7 @@ header {
 }
 .content-destination img {
   border-radius: 10px;
+  width: 100%;
 }
 .content-pick {
   padding-top: 30px;
@@ -294,14 +307,13 @@ header {
   justify-content: space-between;
 }
 .content-pick .destination {
-  width: 30%;
   margin-bottom: 30px;
 }
 button {
-  background-color: #008080;
+  background-color: #00b3b3;
   color: #fff;
   width: 22vw;
-  border-radius: 25%;
+  border-radius: 25px;
   padding: 5% 0;
   font-weight: bold;
 }

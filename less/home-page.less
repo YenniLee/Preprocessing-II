@@ -6,20 +6,59 @@ header{
   border-bottom: @dashed-line;
   width: 80vw;
   margin: 0 auto;
+
   @media @phone{
     flex-direction: column;
   }
 }
 
+
 .top-content{
   .minor-spacing();
   width: 80vw;
   margin: 0 auto;
-  padding-bottom: 30px;
   border-bottom: @dashed-line;
+  img{
+    width: 100%;
+  }
 }
 
 
+@media @phone{
+  .content-section{
+    flex-direction: column;
+    margin: 0 auto;
+
+  }
+      .text-content{
+       p, h2{
+        width: 200%;
+        margin: 0 10vw;
+       } 
+      }
+      .img-content{
+        img{
+          width: 200%;
+          margin: 0 10vw;
+        }
+      }
+  .content-pick{S
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    .destination{
+      width: 80vw;
+    }
+    button{
+      height: 5vh;
+      font-size: 1.8rem;
+      text-align: center;
+      padding-bottom: 4vh;
+      
+    }
+}       
 .home {    
   .content-section {
     margin: 0 auto;
@@ -28,30 +67,18 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
 
-    @media @phone{
-      flex-direction: column;
-    }
-    
     }
    
     .text-content {
       width: 48%;
       padding-right: 1%;
 
-      @media @phone{
-        width: 84%;
-        margin: 0 auto;
-      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-      @media @phone{
-        width: 84%;
-        margin: 0 auto;
-      }
-
+  
       img {
         border-radius: 10px;
       }
@@ -60,13 +87,9 @@ header{
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
-    
-    @media @phone {
-      div{
-        flex-direction: column-reverse;
-      }
-    }
+    border-bottom: @dashed-line;
+    display: flex;
+    flex-direction: column-reverse;
 
     .text-content {
       padding-left: 1%;
@@ -85,6 +108,7 @@ header{
 
     img {
       border-radius: 10px;
+      width: 100%;
     }
   }
 
@@ -95,13 +119,13 @@ header{
     justify-content: space-between;
 
     .destination {
-      width: 30%;
+      // width: 30%;
       margin-bottom: 30px;
     }
     
   } 
- 
 
 button{
   .btn-style();
 }
+
